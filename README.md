@@ -25,7 +25,7 @@ Sensor-free freehand 3D ultrasound reconstruction infers the 6-DOF relative pose
 
 | Ground Truth | Predicted |
 |:---:|:---:|
-| ![GT case0008](assets/case0008_gt.gif) | ![Pred case0005](assets/case0005_pred.gif) |
+| ![GT case0008](assets/case0008_gt.gif) | ![Pred case0005](assets/case0008_pred.gif) |
 
 > Green = ground truth trajectory · Red = predicted trajectory
 
