@@ -35,7 +35,7 @@ Sensor-free freehand 3D ultrasound reconstruction infers the 6-DOF relative pose
 
 Explore 3D reconstructions, accumulated DOF plots, and per-fold metrics interactively:
 
-[![Open In Colab](https://colab.research.google.com/drive/14hf23nUYgeKx4GA_NiJECnUwLP13dHZC)
+![Open In Colab](https://colab.research.google.com/drive/14hf23nUYgeKx4GA_NiJECnUwLP13dHZC)
 
 The notebook includes:
 - 3D frame-corner trajectory visualisation (Plotly, rotatable)
