@@ -21,17 +21,11 @@ Sensor-free freehand 3D ultrasound reconstruction infers the 6-DOF relative pose
 
 ## Reconstructions
 
-### Case 0005
-
-| Ground Truth | Predicted |
-|:---:|:---:|
-| ![GT case0005](assets/case0005_gt.gif) | ![Pred case0005](assets/case0005_pred.gif) |
-
 ### Case 0008
 
 | Ground Truth | Predicted |
 |:---:|:---:|
-| ![GT case0008](assets/case0008_gt.gif) | ![Pred case0008](assets/case0008_pred.gif) |
+| ![GT case0008](assets/case0008_gt.gif) | ![Pred case0005](assets/case0005_pred.gif) |
 
 > Green = ground truth trajectory · Red = predicted trajectory
 
@@ -41,7 +35,7 @@ Sensor-free freehand 3D ultrasound reconstruction infers the 6-DOF relative pose
 
 Explore 3D reconstructions, accumulated DOF plots, and per-fold metrics interactively:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/YOUR_COLAB_LINK_HERE)
+[![Open In Colab](https://colab.research.google.com/drive/14hf23nUYgeKx4GA_NiJECnUwLP13dHZC)
 
 The notebook includes:
 - 3D frame-corner trajectory visualisation (Plotly, rotatable)
@@ -112,22 +106,9 @@ Diff frames (N−1 ch)
 ├── mytools.py                 # Geometry utils (numpy + torch), sampling
 ├── data-spine-best-seven.json # Dataset config (7 sequences)
 ├── assets/                    # GIFs and figures for README
-│   ├── case0005_gt.gif
-│   ├── case0005_pred.gif
 │   ├── case0008_gt.gif
 │   └── case0008_pred.gif
 └── README.md
-```
-
----
-
-## Installation
-
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install numpy scipy matplotlib scikit-learn mlflow tqdm
 ```
 
 ---
@@ -168,20 +149,6 @@ python test_reconstruction.py \
 ```
 
 Outputs per scan: 3D reconstruction plot, accumulated DOF curves (GT vs pred), and a summary table with dist / drift / T-MSE / R-MSE.
-
----
-
-## Differences from Original DCL-Net
-
-| Component | Original DCL-Net | This repo |
-|-----------|-----------------|-----------|
-| Target anatomy | Prostate (TRUS) | Lumbar spine (B-mode) |
-| Dataset | 640 patients, EM-tracked | 7 sequences, optical tracking |
-| Output head | Single `fc: 128→6` | Dual `fc_trans + fc_rot` |
-| Rotation LR | Same as translation | 3× higher |
-| Loss | MSE + correlation | MSE only (ablation); corr loss implemented |
-| Evaluation | Train/val/test split | LOPO cross-validation |
-| GT label | Mean DOF over window | Per-step DOF, separately normalised |
 
 ---
 
