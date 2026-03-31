@@ -2,7 +2,7 @@
 
 > Reproduction and extension of **DCL-Net** (Guo et al., MICCAI 2020) for sensorless freehand 3D ultrasound reconstruction of the **lumbar spine**, with a dual-head output architecture, spatial attention, and a Leave-One-Patient-Out evaluation protocol.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/YOUR_COLAB_LINK_HERE)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/YOUR_COLAB_LINK_HERE](https://colab.research.google.com/drive/14hf23nUYgeKx4GA_NiJECnUwLP13dHZC))
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-orange.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -28,19 +28,6 @@ Sensor-free freehand 3D ultrasound reconstruction infers the 6-DOF relative pose
 | ![GT case0008](assets/case0008_gt.gif) | ![Pred case0005](assets/case0008_pred.gif) |
 
 > Green = ground truth trajectory · Red = predicted trajectory
-
----
-
-## Interactive Demo
-
-Explore 3D reconstructions, accumulated DOF plots, and per-fold metrics interactively:
-
-![Open In Colab](https://colab.research.google.com/drive/14hf23nUYgeKx4GA_NiJECnUwLP13dHZC)
-
-The notebook includes:
-- 3D frame-corner trajectory visualisation (Plotly, rotatable)
-- Accumulated DOF plots (GT vs prediction) across all 6 DOFs
-- Per-fold LOPO results summary
 
 ---
 
