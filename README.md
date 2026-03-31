@@ -21,7 +21,7 @@ Sensor-free freehand 3D ultrasound reconstruction infers the 6-DOF relative pose
 
 ## Reconstructions
 
-[![Interactive 3D](https://img.shields.io/badge/Interactive_3D-View_Reconstruction-185FA5?style=for-the-badge)](https://ihssene-brahimi.github.io/sensorless-us-spine-recon/docs/spine_case_8_gt.html)
+[![Interactive 3D](https://img.shields.io/badge/Interactive_3D-View_Reconstruction-185FA5?style=for-the-badge)](https://ihssene-brahimi.github.io/sensorless-us-spine-recon/spine_case_8_gt.html)
 
 ### Case 0008
 
