@@ -187,35 +187,19 @@ Outputs per scan: 3D reconstruction plot, accumulated DOF curves (GT vs pred), a
 
 ## Planned Extensions
 
-- [ ] Connect case-wise correlation loss to backward pass
-- [ ] Add 2D lamina landmark auxiliary loss (annotations collected)
+- [ ] Add lamina landmark loss (annotations collected)
 - [ ] Geometric corner-point distance + drift penalty in training loop
 - [ ] Larger dataset (multi-patient LOPO)
 
----
-
-## Citation
-
-If you use this code, please cite the original DCL-Net paper:
-
-```bibtex
-@inproceedings{guo2020sensorless,
-  title     = {Sensorless Freehand 3D Ultrasound Reconstruction via Deep Contextual Learning},
-  author    = {Guo, Hengtao and Xu, Sheng and Wood, Bradford and Yan, Pingkun},
-  booktitle = {International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
-  year      = {2020},
-  note      = {arXiv:2006.07694}
-}
-```
 
 ---
 
 ## Acknowledgements
 
-This work is part of an MSc thesis at McGill University / École de technologie supérieure, Montréal, supported by the IMAGINE summer school (Imaging Without Borders, McGill Neuro) and the AI for Good Moonshot Award 2025.
+This work is part of an MSc thesis at École de technologie supérieure, Montréal, supported by the LATIS Lab.
 
 ---
 
 <p align="center">
-  <sub>Ihssene Brahimi · McGill University / ÉTS · 2025</sub>
+  <sub>Ihssene Brahimi · ÉTS · 2025-2027</sub>
 </p>
