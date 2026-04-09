@@ -2,7 +2,7 @@
 
 > Reproduction and extension of **DCL-Net** (Guo et al., MICCAI 2020) for sensorless freehand 3D ultrasound reconstruction of the **spine**, with a dual-head output architecture, spatial attention, and a Leave-One-Patient-Out evaluation protocol.
 
-[![Open Demo](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/14hf23nUYgeKx4GA_NiJECnUwLP13dHZC#scrollTo=e8c7ac2d])
+[![Open Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14hf23nUYgeKx4GA_NiJECnUwLP13dHZC#scrollTo=e8c7ac2d)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-orange.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
